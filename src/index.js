@@ -1,17 +1,33 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+let Data=[
+    {
+        Id: 1,
+        ToMeet: "Arun",
+        Date: "2023-07-07",
+        Time: "11:00",
+        Purpose: "Playing",
+      },
+      {
+        Id: 2,
+        ToMeet: "JK",
+        Date: "2023-07-10",
+        Time: "10:00",
+        Purpose: "Function",
+      },
+      {
+        Id: 3,
+        ToMeet: "Dinesh",
+        Date: "2023-07-15",
+        Time: "5:00",
+        Purpose: "Friends meeting",
+      },
+]
+
+
+
+
+ReactDOM.createRoot(document.getElementById("root")).render(<App Data={Data}/>);
